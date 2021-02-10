@@ -2,17 +2,17 @@
 Project to implements java features
 link reference: https://www.journaldev.com/2389/java-8-features-with-examples
 
-:ballot_box_with_check: Java 8 Features
-:ballot_box_with_check: Java 9 Features
-:ballot_box_with_check: Java 9 Modules
-:ballot_box_with_check: Java 10 Features
-:ballot_box_with_check: Java 11 Features
-:ballot_box_with_check: Java 12 Features
-:ballot_box_with_check: Java 13 Features
-:ballot_box_with_check: Java 14 Features
-:ballot_box_with_check: Java 15 Features
+-:ballot_box_with_check: Java 8 Features
+-:ballot_box_with_check: Java 9 Features
+-:ballot_box_with_check: Java 9 Modules
+-:ballot_box_with_check: Java 10 Features
+-:ballot_box_with_check: Java 11 Features
+-:ballot_box_with_check: Java 12 Features
+-:ballot_box_with_check: Java 13 Features
+-:ballot_box_with_check: Java 14 Features
+-:ballot_box_with_check: Java 15 Features
 
-:ballot_box_with_check: Lambda Expressions
+-:ballot_box_with_check: Lambda Expressions
 :ballot_box_with_check: Stream API
 :ballot_box_with_check: Date Time API
 :ballot_box_with_check: Java Access Modifiers
