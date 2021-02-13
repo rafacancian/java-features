@@ -17,7 +17,7 @@ public class ForEach {
 
         // Creating sample collection
         List<Integer> myList = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 3; i++) {
             myList.add(i);
         }
 
@@ -39,6 +39,15 @@ public class ForEach {
         //traversing with Consumer interface implementation
         MyConsumer action = new MyConsumer();
         myList.forEach(action);
+
+        // Traversing using lambda
+        myList.forEach(integer -> System.out.println("ForEach lambda value: " + integer));
+
+        // Traversing using for
+        for (Integer integer : myList) {
+            System.out.println("ForEach value: " + integer);
+        }
+
 
     }
 
