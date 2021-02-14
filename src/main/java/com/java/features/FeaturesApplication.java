@@ -1,6 +1,6 @@
 package com.java.features;
 
-import com.java.features.java9.interfaceprivate.ExecutePrivateInterface;
+import com.java.features.java9.processhandle.ExecuteProcessHandle;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -17,7 +17,8 @@ public class FeaturesApplication {
 
         //Java 9
         //ExecuteImmutable.execute();
-        ExecutePrivateInterface.execute();
+        //ExecutePrivateInterface.execute();
+        ExecuteProcessHandle.execute();
 
     }
 
