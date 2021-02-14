@@ -1,4 +1,4 @@
-package com.java.features.java8.foreach;
+package com.java.features.java8.collection.foreach;
 
 import java.util.ArrayList;
 import java.util.Iterator;
