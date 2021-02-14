@@ -1,6 +1,7 @@
 package com.java.features;
 
 import com.java.features.java8.datetime.ExecuteDates;
+import com.java.features.java9.resourcereader.ExecuteResourceReader;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -20,6 +21,7 @@ public class FeaturesApplication {
         //ExecuteImmutable.execute();
         //ExecutePrivateInterface.execute();
         // ExecuteProcessHandle.execute();
+        ExecuteResourceReader.execute();
 
     }
 
