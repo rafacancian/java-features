@@ -1,5 +1,6 @@
 package com.java.features;
 
+import com.java.features.java12.filemismatch.ExecuteFileMismatch;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -30,6 +31,10 @@ public class FeaturesApplication {
         // ExecuteStringMethods.execute();
         // ExecuteNestAccessControl executeNestAccessControl = new ExecuteNestAccessControl();
         // executeNestAccessControl.execute();
+
+        // Java 12
+        // ExecuteSwitchExpression.execute();
+        ExecuteFileMismatch.execute();
     }
 
 }
