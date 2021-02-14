@@ -25,7 +25,7 @@ public class ExecuteNestAccessControl {
         try {
 
             // before java 11 was not possible to access nest access method by reflection
-            Method method = nested.getClass().getDeclaredMethod("myPublicMethod");
+            Method method = nested.getClass().getDeclaredMethod("myPrivateMethod");
             method.invoke(nested);
 
         } catch (Exception e) {
