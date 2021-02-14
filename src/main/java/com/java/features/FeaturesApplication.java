@@ -1,6 +1,6 @@
 package com.java.features;
 
-import com.java.features.java8.interfacemethod.ExecuteInterfaceMethod;
+import com.java.features.java8.collection.stream.ExecuteStreamAPI;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,7 +11,8 @@ public class FeaturesApplication {
         SpringApplication.run(FeaturesApplication.class, args);
 
         //ForEach.execute();
-        ExecuteInterfaceMethod.execute();
+        //ExecuteInterfaceMethod.execute();
+        ExecuteStreamAPI.execute();
 
     }
 
