@@ -1,6 +1,6 @@
 package features;
 
-import features.java12.filemismatch.ExecuteFileMismatch;
+import features.java8.streams.ExecuteStreams;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -15,6 +15,7 @@ public class FeaturesApplication {
         // ExecuteInterfaceMethod.execute();
         // ExecuteStreamAPI.execute();
         // ExecuteDates.execute();
+        ExecuteStreams.execute();
 
         // Java 9
         // ExecuteImmutable.execute();
@@ -34,7 +35,15 @@ public class FeaturesApplication {
 
         // Java 12
         // ExecuteSwitchExpression.execute();
-        ExecuteFileMismatch.execute();
+        // ExecuteFileMismatch.execute();
+
+        // Validators
+        //ExecuteBrazilDocumentValidator.execute();
+
+        // Certification
+        //ExecutePrimitiveTypes.execute();
+        //ExecuteCertificationStreams.execute();
+
     }
 
 }

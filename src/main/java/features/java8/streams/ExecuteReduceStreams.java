@@ -1,43 +1,47 @@
 package features.java8.streams;
 
-import features.certification.streams.Product;
-
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
 
 
-public class ExecuteStreams {
+public class ExecuteReduceStreams {
 
-    private static final List<Product> products = Arrays.asList(
-            Product.builder().id(1L).name("product 01").value(new BigDecimal("110")).build(),
-            Product.builder().id(2L).name("product 02").value(new BigDecimal("220")).build(),
-            Product.builder().id(3L).name("product 03").value(new BigDecimal("330")).build(),
-            Product.builder().id(4L).name("product 04").value(new BigDecimal("440")).build()
-    );
 
     public static void execute() {
-        findById(2L);
-        sumOfProducts();
-    }
 
-    private static void sumOfProducts() {
-        Optional<BigDecimal> result = products.stream()
-                .map(Product::getValue)
-                .reduce(BigDecimal::add);
-        System.out.println("Sum of product values: " + result.get());
-        System.out.println("Sum of product values: " + result.get().setScale(2, RoundingMode.HALF_UP));
-    }
+        int[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-    private static void findById(Long id) {
+        int sum011 = Arrays.stream(numbers).reduce(0, (a, b) -> a + b); // 1st argument, init value = 0
+        int sum012 = Arrays.stream(numbers).reduce(0, Integer::sum);
+        System.out.println("sum : " + sum011); // 55
+        System.out.println("sum : " + sum012); // 55
 
-        Product result = products.stream().
-                filter(product -> product.getId() == id)
-                .findFirst()
-                .orElseGet(null);
-        System.out.println("FindById: " + result);
+        int max1 = Arrays.stream(numbers).reduce(0, Integer::max);  // 10
+        System.out.println("max: " + max1);
+
+        int min1 = Arrays.stream(numbers).reduce(0, Integer::min); // 0
+        System.out.println("min: " + min1);
+
+        // Join String
+        String[] strings = {"a", "b", "c", "d", "e"};
+
+        // |a|b|c|d|e , the initial | join is not what we want
+        String reduce = Arrays.stream(strings).reduce("", (a, b) -> a + "|" + b);
+        System.out.println(reduce);
+
+        // a|b|c|d|e, filter the initial "" empty string
+        String reduce2 = Arrays.stream(strings).reduce("", (a, b) -> {
+            if (!"".equals(a)) {
+                return a + "|" + b;
+            } else {
+                return b;
+            }
+        });
+        System.out.println(reduce2);
+
+        // a|b|c|d|e , better uses the Java 8 String.join :)
+        String join = String.join("|", strings);
+        System.out.println(join);
+
     }
 
 

@@ -1,4 +1,4 @@
-package features.certification.streams;
+package features.java8.streams;
 
 import lombok.Builder;
 import lombok.Data;
