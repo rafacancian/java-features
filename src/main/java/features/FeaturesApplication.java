@@ -1,6 +1,6 @@
 package features;
 
-import features.java8.streams.ExecuteStreams;
+import features.java8.bifunction.ExecuteBiFunction;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -15,7 +15,10 @@ public class FeaturesApplication {
         // ExecuteInterfaceMethod.execute();
         // ExecuteStreamAPI.execute();
         // ExecuteDates.execute();
-        ExecuteStreams.execute();
+        //ExecuteStreams.execute();
+        // ExecuteInterfaceMethod.execute();
+        // ExecuteReferenceMethod.execute();
+        ExecuteBiFunction.execute();
 
         // Java 9
         // ExecuteImmutable.execute();
