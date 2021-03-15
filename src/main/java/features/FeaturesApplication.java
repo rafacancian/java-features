@@ -1,6 +1,6 @@
 package features;
 
-import features.java8.bifunction.ExecuteBiFunction;
+import features.java13.switchcase.ExecuteSwitchCase;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -15,10 +15,10 @@ public class FeaturesApplication {
         // ExecuteInterfaceMethod.execute();
         // ExecuteStreamAPI.execute();
         // ExecuteDates.execute();
-        //ExecuteStreams.execute();
+        // ExecuteStreams.execute();
         // ExecuteInterfaceMethod.execute();
         // ExecuteReferenceMethod.execute();
-        ExecuteBiFunction.execute();
+        // ExecuteBiFunction.execute();
 
         // Java 9
         // ExecuteImmutable.execute();
@@ -39,6 +39,9 @@ public class FeaturesApplication {
         // Java 12
         // ExecuteSwitchExpression.execute();
         // ExecuteFileMismatch.execute();
+
+        // Java 13
+        ExecuteSwitchCase.execute();
 
         // Validators
         //ExecuteBrazilDocumentValidator.execute();
