@@ -1,6 +1,6 @@
 package features;
 
-import features.java13.switchcase.ExecuteSwitchCase;
+import features.certification.generics.ExecuteGenerics;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -41,7 +41,7 @@ public class FeaturesApplication {
         // ExecuteFileMismatch.execute();
 
         // Java 13
-        ExecuteSwitchCase.execute();
+        //ExecuteSwitchCase.execute();
 
         // Validators
         //ExecuteBrazilDocumentValidator.execute();
@@ -49,6 +49,8 @@ public class FeaturesApplication {
         // Certification
         //ExecutePrimitiveTypes.execute();
         //ExecuteCertificationStreams.execute();
+        ExecuteGenerics.execute();
+
 
     }
 
