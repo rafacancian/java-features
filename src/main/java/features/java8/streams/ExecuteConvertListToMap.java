@@ -1,14 +1,10 @@
 package features.java8.streams;
 
-import features.certification.streams.Product;
-
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;
 
-
 public class ExecuteConvertListToMap {
-
 
     public static void execute() {
 
@@ -18,12 +14,9 @@ public class ExecuteConvertListToMap {
         products.add(Product.builder().id(3L).name("product 03").value(new BigDecimal("330")).build());
         products.add(Product.builder().id(4L).name("product 04").value(new BigDecimal("440")).build());
 
-
         System.out.println("List to Map simple");
-        Map<String, BigDecimal> result1 = products.stream()
-                .collect(Collectors.toMap(Product::getName, Product::getValue));
+        Map<String, BigDecimal> result1 = products.stream().collect(Collectors.toMap(Product::getName, Product::getValue));
         System.out.println(result1);
-
 
         System.out.println("List to Map with duplicate key value");
         products.add(Product.builder().id(5L).name("product 01").value(new BigDecimal("510")).build());
@@ -36,6 +29,5 @@ public class ExecuteConvertListToMap {
                 .sorted(Comparator.comparing(Product::getName).reversed())
                 .collect(Collectors.toMap(Product::getName, Product::getValue, (oldValue, newValue) -> oldValue, HashMap::new));
         System.out.println(result3);
-
     }
 }

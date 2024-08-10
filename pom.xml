@@ -14,7 +14,7 @@
     <name>features</name>
     <description>Java Features</description>
     <properties>
-        <java.version>13</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>

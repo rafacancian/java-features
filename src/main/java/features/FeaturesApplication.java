@@ -1,6 +1,6 @@
 package features;
 
-import features.certification.generics.ExecuteGenerics;
+import certification.generics.ExecuteGenerics;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -50,8 +50,5 @@ public class FeaturesApplication {
         //ExecutePrimitiveTypes.execute();
         //ExecuteCertificationStreams.execute();
         ExecuteGenerics.execute();
-
-
     }
-
 }
